@@ -25,4 +25,4 @@ client.on("guildMemberAdd", member => {
     .catch(console.error);
 });
 
-client.login(authenticationContent.token);
+client.login(authentication.token);
