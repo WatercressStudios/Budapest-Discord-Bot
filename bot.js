@@ -43,7 +43,7 @@ client.on('message', message => {
     }
 
     message.member.addRole(role)
-      .then(console.log(`"${message.member.user.username}" has been added to the role ${role.name}"`))
+      .then(console.log(`"${message.member.user.username}" has been added to the role "${role.name}"`))
       .catch(console.error);
 
     message.channel.send('You\'ve been added to the role: ' + role.name);
